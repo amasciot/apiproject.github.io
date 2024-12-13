@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Las Nenas</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Tienda Las Nenas</h1>
+    </div>
+    <div class="buscar">
+      <input type="text" id="search" placeholder="Buscar productos..." />
+      <button onclick="buscarProductos()">Buscar</button>
+    </div>
+    <div>
+        <h1>Valor del Dólar</h1>
+        <div id="valorDolar">Cargando...</div> <!-- Aquí mostrarás el valor del dólar -->
+        <script src="app.js"></script> <!-- Incluimos el archivo JS -->
+    </div>
+  </header>
+
+  <div class="container">
+    <aside class="categorias">
+      <h2>Categorías</h2>
+      <button id="obtener-categorias">Ver todas las categorías</button>
+      <div id="lista-categorias"></div>
+    </aside>
+
+    <main class="productos">
+      <div class="acciones">
+        <button id="obtener-productos">Ver todos los productos</button>
+        <button id="obtener-productos-limitados">Ver 5 productos</button>
+        <button id="obtener-productos-ordenados">Ver productos ordenados</button>
+      </div>
+
+      <div id="error"></div>
+      <div id="lista-productos" class="producto-grid"></div>
+    </main>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Tienda Las Nenas | Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
+
+
+

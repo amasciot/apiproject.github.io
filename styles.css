@@ -1,0 +1,176 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  header {
+    background-color: #ffcc00;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header .buscar input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  header .buscar button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  header .buscar button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+  
+  /* Sidebar de categorías */
+  aside.categorias {
+    flex: 1;
+    background-color: #fff;
+    padding: 15px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  aside.categorias h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  aside.categorias button {
+    padding: 8px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  aside.categorias button:hover {
+    background-color: #218838;
+  }
+  
+  #lista-categorias button {
+    padding: 8px;
+    margin-bottom: 10px;
+    background-color: #17a2b8;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #lista-categorias button:hover {
+    background-color: #138496;
+  }
+  
+  /* Área de productos */
+  main.productos {
+    flex: 3;
+  }
+  
+  .producto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .producto {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .producto:hover {
+    transform: scale(1.05);
+  }
+  
+  .producto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+  
+  .producto h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .producto p {
+    color: #777;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .producto span {
+    font-size: 16px;
+    color: #28a745;
+    margin-top: 10px;
+    display: block;
+  }
+  
+  /* Acciones de botones */
+  .acciones {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Pie de página */
+  footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  
